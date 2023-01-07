@@ -1,5 +1,6 @@
 import { loadRemoteModule } from '@softarc/native-federation';
 import React, { useEffect } from 'react';
+
 import { of, tap } from 'rxjs';
 import './App.css';
 

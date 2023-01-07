@@ -1,8 +1,12 @@
 const {
-  withNativeFederation,
+  withNativeFederation, shareAll
 } = require("@softarc/native-federation/build");
 
 module.exports = withNativeFederation({
   name: "host",
-  shared: {},
+  shared: shareAll(),
+  skip: [
+    'react-dom/server',
+    'react-dom/server.node',
+  ],
 });
